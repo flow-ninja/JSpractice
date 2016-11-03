@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS练习3</title>
+    <script type="text/javascript">
+        function fibonacci(n) {
+            var a, b, i, x;
+            a = b = 1;
+            if (n == 1 || n == 2) {
+                return 1;
+            }
+            for(i = 3; i <= n; i++) {
+                x = a + b;
+                a = b;
+                b = x;
+            }
+            return x;
+        }
+        console.log(fibonacci(16));
+    </script>
+</head>
+<body>
+    <h1>斐波那契数列（非递归实现）</h1>
+</body>
+</html>
